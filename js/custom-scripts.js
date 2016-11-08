@@ -30,6 +30,9 @@ $(document).ready(function () {
     $('.slider-winner').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        appendArrows: '.slider-winner-controls',
+        prevArrow: '.slider-winner-left',
+        nextArrow: '.slider-winner-right',
         autoplay: true,
         autoplaySpeed: 5000
     });
@@ -37,6 +40,9 @@ $(document).ready(function () {
     $('.slider-banner').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        appendArrows: '.slider-banner-controls',
+        prevArrow: '.slider-banner-left',
+        nextArrow: '.slider-banner-right',
         autoplay: true,
         autoplaySpeed: 6000
     });
