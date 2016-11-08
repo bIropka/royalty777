@@ -27,41 +27,18 @@ $(document).ready(function () {
      ******* slider scripts ********
      ******************************/
 
-    $('.slider-logisticians').slick({
-        slidesToShow: 6,
+    $('.slider-winner').slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1366,
-                settings: {
-                    slidesToShow: 5
-                }
-            },
-            {
-                breakpoint: 981,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 360,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+
+    $('.slider-banner').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 6000
     });
 
     /*******************************
