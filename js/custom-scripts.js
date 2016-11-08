@@ -74,6 +74,34 @@ $(document).ready(function () {
     });
 
     /*******************************
+     ******* custom select
+     ******************************/
+
+    $('.current-value').click(function() {
+
+        $(this).siblings('i').toggleClass('fa-chevron-up fa-chevron-down');
+        $(this).parents('.custom-select').toggleClass('active');
+        $(this).siblings('ul').stop().fadeToggle(0);
+
+    });
+
+    $('.payment').click(function() {
+
+        var newClassNames = $(this).attr('class');
+        var newPayment = $(this).html();
+
+        $(this).parent().siblings('.current-value').html(newPayment);
+        $(this).parent().siblings('.current-value').removeClass().addClass('current-value').addClass(newClassNames);
+
+        $(this).parents('.custom-select').find('input').attr('value', newPayment);
+
+        $(this).parent().siblings('i').toggleClass('fa-chevron-up fa-chevron-down');
+        $(this).parents('.custom-select').removeClass('active');
+        $(this).parents('ul').stop().fadeOut(0);
+
+    });
+
+    /*******************************
      ******* modals
      ******************************/
 
